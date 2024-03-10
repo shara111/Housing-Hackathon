@@ -17,7 +17,7 @@ export default function MainNavbar() {
     <>
       <Navbar expand="lg" style={{ backgroundColor: "#183D3D", padding: "10px" }}>
         <Container fluid className="container">
-          <Navbar.Brand href="#">Student Critic</Navbar.Brand>
+          <Navbar.Brand href="#">Critical</Navbar.Brand>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="bsasic-navbar-nav">
