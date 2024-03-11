@@ -17,7 +17,7 @@ export default function MainNavbar() {
     <>
       <Navbar expand="lg" style={{ backgroundColor: "#183D3D", padding: "10px" }}>
         <Container fluid className="container">
-          <Navbar.Brand href="#">Sharespace Niza</Navbar.Brand>
+          <Navbar.Brand href="#">Sharespace Scout</Navbar.Brand>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="bsasic-navbar-nav">
@@ -30,16 +30,16 @@ export default function MainNavbar() {
                 <Nav.Link>About Us</Nav.Link>
               </Link>
               &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-              <Link href="/support" passHref legacyBehavior>
+              {/* <Link href="/support" passHref legacyBehavior>
                 <Nav.Link>Support Us</Nav.Link>
-              </Link>
+              </Link> */}
             </Nav>
             <Button href="/profile" variant="outline-success">
               Edit Profile
             </Button>
             &nbsp; &nbsp;
             <Button href="/preferences" variant="outline-success">
-              Edit Habits
+              Edit Preferences
             </Button>
           </Navbar.Collapse>
         </Container>
