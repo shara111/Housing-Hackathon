@@ -5,16 +5,50 @@ import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import Row from "react-bootstrap/Row";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { createClient } from '@supabase/supabase-js'
+
+// Connect form to the supabase 
+const supabaseUrl = 'https://dmbpqimnwpppmwzovywv.supabase.co'
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRtYnBxaW1ud3BwcG13em92eXd2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTAwOTQzMzIsImV4cCI6MjAyNTY3MDMzMn0.v2771oxS0DT6nlAbMugqRujznbfqIox4iYAq9Uhg9IQ'; //process.env.SUPABASE_KEY
+const supabase = createClient(supabaseUrl, supabaseKey)
 
 export default function Profile() {
   const [validated, setValidated] = useState(false);
   const [date, setDate] = useState(new Date());
 
-  const handleSubmit = (event) => {
+  // Submitting the form 
+  const handleSubmit = async (event) => {
+    event.preventDefault();
     const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
+
+    try{
+      if (form.checkValidity() === false) {
+        event.stopPropagation();
+        throw new Error('The form is invalid');
+      }
+
+      // Get form data from the webpage
+      const formData = new FormData(form);
+      const data = {};
+
+      formData.forEach((value, key) => {
+        data[key] = value;
+      });
+
+      // Insert data into Supabase table
+      const { error } = await supabase
+        .from('personalinformation')
+        .insert([data]);
+      
+      if (error) {
+        throw error;
+      }
+
+      // Reset the form after submitting
+      form.reset;
+
+    } catch (error) {
+      console.error('Error submitting form', error.message);
     }
 
     setValidated(true);
