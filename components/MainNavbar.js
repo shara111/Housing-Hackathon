@@ -1,4 +1,4 @@
-import { Button, Container, Form, Nav, Navbar } from "react-bootstrap";
+import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import Link from "next/link";
 
 export default function MainNavbar() {
@@ -7,7 +7,7 @@ export default function MainNavbar() {
       <Navbar expand="lg" style={{ backgroundColor: "#183D3D", padding: "10px" }}>
         <Container fluid className="container">
           <Navbar.Brand href="#" eventKey="disabled" disabled>
-            Sharespace Scout
+            StudentStays
           </Navbar.Brand>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
