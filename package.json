@@ -21,7 +21,9 @@
     "react-dom": "^18.2.0",
     "react-fontawesome": "^1.7.1",
     "react-hook-form": "^7.51.0",
-    "swr": "^2.2.5"
+    "swr": "^2.2.5",
+    "typed": "^10.0.0-beta.2",
+    "typed.js": "^2.1.0"
   },
   "devDependencies": {
     "eslint": "^8",

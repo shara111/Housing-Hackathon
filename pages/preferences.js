@@ -82,6 +82,9 @@ export default function Preferences() {
         {/* RELIGION INPUT*/}
         <ReligionInput register={register} />
         <br />
+        {/*Pets input */}
+        <PetInput register={register} />
+        <br/>
 
         {/* Cooking and Eating INPUT*/}
         <CookingInput register={register} />
@@ -89,10 +92,6 @@ export default function Preferences() {
 
         {/* Cleaniness INPUT*/}
         <CleanlinessInput register={register} />
-        <br />
-
-        {/* Pets INPUT*/}
-        <PetInput register={register} />
         <br />
 
         {/* Substance Comsumption INPUT*/}
