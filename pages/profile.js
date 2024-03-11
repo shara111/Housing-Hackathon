@@ -6,7 +6,7 @@ import InputGroup from "react-bootstrap/InputGroup";
 import Row from "react-bootstrap/Row";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-export default function Submit() {
+export default function Profile() {
   const [validated, setValidated] = useState(false);
   const [date, setDate] = useState(new Date());
 

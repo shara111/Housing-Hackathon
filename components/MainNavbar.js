@@ -34,9 +34,12 @@ export default function MainNavbar() {
                 <Nav.Link>Support Us</Nav.Link>
               </Link>
             </Nav>
-
-            <Button href="/submit" variant="outline-success">
-              Submit
+            <Button href="/profile" variant="outline-success">
+              Edit Profile
+            </Button>
+            &nbsp; &nbsp;
+            <Button href="/preferences" variant="outline-success">
+              Edit Habits
             </Button>
           </Navbar.Collapse>
         </Container>
