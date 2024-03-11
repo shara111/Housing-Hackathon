@@ -1,3 +1,9 @@
+import CleanlinessInput from "@/components/CleanlinessInput";
+import CookingInput from "@/components/CookingInput";
+import GuestInput from "@/components/GuestInput";
+import PetInput from "@/components/PetInput";
+import ReligionInput from "@/components/ReligionInput";
+import SubConsumptionInput from "@/components/SubConsumptionInput";
 import { Button, Form } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import { useForm } from "react-hook-form";
@@ -70,159 +76,27 @@ export default function Preferences() {
       <br />
       <Form onSubmit={handleSubmit(onSubmit)}>
         {/* GUEST INPUT*/}
-        <Card>
-          <Card.Body>
-            <h4>Guest</h4>
-            <br />
-            <h5>Day Time Guests</h5>
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="inlineRadioOptions"
-                id="inlineRadio1"
-                value="option1"
-              />
-              <label class="form-check-label" for="inlineRadio1">
-                Daily
-              </label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="inlineRadioOptions"
-                id="inlineRadio2"
-                value="option2"
-              />
-              <label class="form-check-label" for="inlineRadio2">
-                Few times a week
-              </label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="inlineRadioOptions"
-                id="inlineRadio1"
-                value="option1"
-              />
-              <label class="form-check-label" for="inlineRadio1">
-                Few times a month
-              </label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="inlineRadioOptions"
-                id="inlineRadio2"
-                value="option2"
-              />
-              <label class="form-check-label" for="inlineRadio2">
-                Few times a year
-              </label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="inlineRadioOptions"
-                id="inlineRadio1"
-                value="option1"
-              />
-              <label class="form-check-label" for="inlineRadio1">
-                Never
-              </label>
-            </div>
-            <br />
-            <label>notes</label>
-            <br />
-            <input type="text" placeholder="notes" {...register("religionNotes")} /> <br /> <br />
-            <label> I have a pet</label>
-            <input type="checkbox" />
-          </Card.Body>
-        </Card>
+        <GuestInput register={register} />
         <br />
 
         {/* RELIGION INPUT*/}
-        <Card>
-          <Card.Body>
-            <label>Religion</label>
-            <br />
-            <input type="text" placeholder="Religion" {...register("typeOfReligion")} /> <br />
-            <br />
-            <label>notes</label>
-            <br />
-            <input type="text" placeholder="notes" {...register("religionNotes")} /> <br /> <br />
-            <label> I have a pet</label>
-            <input type="checkbox" />
-          </Card.Body>
-        </Card>
+        <ReligionInput register={register} />
         <br />
 
         {/* Cooking and Eating INPUT*/}
-        <Card>
-          <Card.Body>
-            <label>Religion</label>
-            <br />
-            <input type="text" placeholder="Religion" {...register("typeOfReligion")} /> <br />
-            <br />
-            <label>notes</label>
-            <br />
-            <input type="text" placeholder="notes" {...register("religionNotes")} /> <br /> <br />
-            <label> I have a pet</label>
-            <input type="checkbox" />
-          </Card.Body>
-        </Card>
+        <CookingInput register={register} />
         <br />
 
-        {/* Only men only women INPUT*/}
-        <Card>
-          <Card.Body>
-            <label>Religion</label>
-            <br />
-            <input type="text" placeholder="Religion" {...register("typeOfReligion")} /> <br />
-            <br />
-            <label>notes</label>
-            <br />
-            <input type="text" placeholder="notes" {...register("religionNotes")} /> <br /> <br />
-            <label> I have a pet</label>
-            <input type="checkbox" />
-          </Card.Body>
-        </Card>
+        {/* Cleaniness INPUT*/}
+        <CleanlinessInput register={register} />
         <br />
 
         {/* Pets INPUT*/}
-        <Card>
-          <Card.Body>
-            <label>Religion</label>
-            <br />
-            <input type="text" placeholder="Religion" {...register("typeOfReligion")} /> <br />
-            <br />
-            <label>notes</label>
-            <br />
-            <input type="text" placeholder="notes" {...register("religionNotes")} /> <br /> <br />
-            <label> I have a pet</label>
-            <input type="checkbox" />
-          </Card.Body>
-        </Card>
+        <PetInput register={register} />
         <br />
 
         {/* Substance Comsumption INPUT*/}
-        <Card>
-          <Card.Body>
-            <label>Religion</label>
-            <br />
-            <input type="text" placeholder="Religion" {...register("typeOfReligion")} /> <br />
-            <br />
-            <label>notes</label>
-            <br />
-            <input type="text" placeholder="notes" {...register("religionNotes")} /> <br /> <br />
-            <label> I have a pet</label>
-            <input type="checkbox" />
-          </Card.Body>
-        </Card>
+        <SubConsumptionInput register={register} />
         <br />
         <Button type="submit">Save & Next</Button>
       </Form>
