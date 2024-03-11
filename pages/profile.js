@@ -8,7 +8,8 @@ import { createClient } from "@supabase/supabase-js";
 
 // Connect form to the supabase
 const supabaseUrl = "https://dmbpqimnwpppmwzovywv.supabase.co";
-const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRtYnBxaW1ud3BwcG13em92eXd2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTAwOTQzMzIsImV4cCI6MjAyNTY3MDMzMn0.v2771oxS0DT6nlAbMugqRujznbfqIox4iYAq9Uhg9IQ"; //process.env.SUPABASE_KEY
+const supabaseKey =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRtYnBxaW1ud3BwcG13em92eXd2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTAwOTQzMzIsImV4cCI6MjAyNTY3MDMzMn0.v2771oxS0DT6nlAbMugqRujznbfqIox4iYAq9Uhg9IQ"; //process.env.SUPABASE_KEY
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 export default function Profile() {
@@ -19,58 +20,55 @@ export default function Profile() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const form = event.currentTarget;
-   
+
     try {
-       if (form.checkValidity() === false) {
-         event.stopPropagation();
-         throw new Error("Please fill in all required fields.");
-       }
-   
-       // Get form data from the webpage
-       const formData = new FormData(form);
-       const data = {};
-       
-       // Populate data object with form field values
-       formData.forEach((value, key) => {
-         data[key] = value;
-       });
-   
-       // Assuming m_language is the field intended to be an array
-       // Convert the languages string into an array
-       if (data.m_language) {
-         data.m_language = data.m_language.split(',');
-       }
-   
-       // Insert data into Supabase table
-       console.log("Data to be inserted:", data); // Log data for debugging
-       let dataset = [data];
-       const { error } = await supabase.from("personalinformation").insert(dataset);
-       
-       if (error) {
-         throw new Error(`Supabase insert error: ${error.message}`);
-       }
-   
-       // Reset the form after successful submission
-       form.reset();
-   
-       // Provide feedback to the user
-       alert("Form submitted successfully!");
-   
+      if (form.checkValidity() === false) {
+        event.stopPropagation();
+        throw new Error("Please fill in all required fields.");
+      }
+
+      // Get form data from the webpage
+      const formData = new FormData(form);
+      const data = {};
+
+      // Populate data object with form field values
+      formData.forEach((value, key) => {
+        data[key] = value;
+      });
+
+      // Assuming m_language is the field intended to be an array
+      // Convert the languages string into an array
+      if (data.m_language) {
+        data.m_language = data.m_language.split(",");
+      }
+
+      // Insert data into Supabase table
+      console.log("Data to be inserted:", data); // Log data for debugging
+      let dataset = [data];
+      const { error } = await supabase.from("personalinformation").insert(dataset);
+
+      if (error) {
+        throw new Error(`Supabase insert error: ${error.message}`);
+      }
+
+      // Reset the form after successful submission
+      form.reset();
+
+      // Provide feedback to the user
+      alert("Form submitted successfully!");
     } catch (error) {
-       console.error("Error submitting form", error);
-       // Display error message to the user
-       alert(`Error submitting form: ${error.message}`);
+      console.error("Error submitting form", error);
+      // Display error message to the user
+      alert(`Error submitting form: ${error.message}`);
     }
-   
+
     setValidated(true);
-   };
-   
+  };
 
   return (
     <div style={{ padding: "10px" }}>
       <Form noValidate validated={validated} onSubmit={handleSubmit} style={{ paddingTop: "20px" }}>
         <Row className="mb-4" style={{ gap: "20px" }}>
-
           <Form.Group md="4" controlId="validationCustom01">
             <Form.Label>First name *</Form.Label>
             <Form.Control name="m_fname" required type="text" placeholder="First name" defaultValue="" />
@@ -168,7 +166,6 @@ export default function Profile() {
 
           <Form.Group md="4" controlId="validationResidencystatus">
             <Form.Label>Residency Status *</Form.Label>
-<<<<<<< HEAD
             <Form.Control
               name="m_residencystatus"
               required
@@ -176,9 +173,6 @@ export default function Profile() {
               placeholder="Residency Status"
               defaultValue=""
             />
-=======
-            <Form.Control name="m_residencystatus" required type="text" placeholder="Residency Status" defaultValue="" />
->>>>>>> 16d29129d8036c8625111c12bd005937a8dddc6b
             <Form.Control.Feedback type="invalid">Residency Status is required</Form.Control.Feedback>
           </Form.Group>
 
