@@ -88,7 +88,7 @@ export default function GuestInput({ register }) {
               value="option1"
               {...register("dayTimeGuestsFreq")}
             />
-            <label className="form-check-label" for="inlineRadio1">
+            <label className="form-check-label" htmlFor="inlineRadio1">
               Daily/No Preference
             </label>
           </div>
@@ -101,7 +101,7 @@ export default function GuestInput({ register }) {
               value="option2"
               {...register("dayTimeGuestsFreq")}
             />
-            <label className="form-check-label" for="inlineRadio2">
+            <label className="form-check-label" htmlFor="inlineRadio2">
               Few times a week
             </label>
           </div>
@@ -115,7 +115,7 @@ export default function GuestInput({ register }) {
               {...register("dayTimeGuestsFreq")}
             />
 
-            <label className="form-check-label" for="inlineRadio1">
+            <label className="form-check-label" htmlFor="inlineRadio1">
               Few times a month
             </label>
           </div>
@@ -128,7 +128,7 @@ export default function GuestInput({ register }) {
               value="option2"
               {...register("dayTimeGuestsFreq")}
             />
-            <label className="form-check-label" for="inlineRadio2">
+            <label className="form-check-label" htmlFor="inlineRadio2">
               Few times a year
             </label>
           </div>
@@ -141,7 +141,7 @@ export default function GuestInput({ register }) {
               value="option1"
               {...register("dayTimeGuestsFreq")}
             />
-            <label className="form-check-label" for="inlineRadio1">
+            <label className="form-check-label" htmlFor="inlineRadio1">
               Never
             </label>
           </div>
@@ -161,7 +161,7 @@ export default function GuestInput({ register }) {
               value="option1"
               {...register("nightTimeGuests")}
             />
-            <label className="form-check-label" for="inlineRadio1">
+            <label className="form-check-label" htmlFor="inlineRadio1">
               Daily
             </label>
           </div>
@@ -173,7 +173,7 @@ export default function GuestInput({ register }) {
               id="inlineRadio2"
               value="option2"
             />
-            <label className="form-check-label" for="inlineRadio2">
+            <label className="form-check-label" htmlFor="inlineRadio2">
               Few times a week
             </label>
           </div>
@@ -185,7 +185,7 @@ export default function GuestInput({ register }) {
               id="inlineRadio1"
               value="option1"
             />
-            <label className="form-check-label" for="inlineRadio1">
+            <label className="form-check-label" htmlFor="inlineRadio1">
               Few times a month
             </label>
           </div>
@@ -197,7 +197,7 @@ export default function GuestInput({ register }) {
               id="inlineRadio2"
               value="option2"
             />
-            <label className="form-check-label" for="inlineRadio2">
+            <label className="form-check-label" htmlFor="inlineRadio2">
               Few times a year
             </label>
           </div>
@@ -209,7 +209,7 @@ export default function GuestInput({ register }) {
               id="inlineRadio1"
               value="option1"
             />
-            <label className="form-check-label" for="inlineRadio1">
+            <label className="form-check-label" htmlFor="inlineRadio1">
               Never
             </label>
           </div>
@@ -226,7 +226,7 @@ export default function GuestInput({ register }) {
               value="option1"
               {...register("nightTimeGuestsFreq")}
             />
-            <label className="form-check-label" for="inlineRadio1">
+            <label className="form-check-label" htmlFor="inlineRadio1">
               Daily/No Preference
             </label>
           </div>
@@ -238,7 +238,7 @@ export default function GuestInput({ register }) {
               id="inlineRadio2"
               value="option2"
             />
-            <label className="form-check-label" for="inlineRadio2">
+            <label className="form-check-label" htmlFor="inlineRadio2">
               Few times a week
             </label>
           </div>
@@ -250,7 +250,7 @@ export default function GuestInput({ register }) {
               id="inlineRadio1"
               value="option1"
             />
-            <label className="form-check-label" for="inlineRadio1">
+            <label className="form-check-label" htmlFor="inlineRadio1">
               Few times a month
             </label>
           </div>
@@ -262,7 +262,7 @@ export default function GuestInput({ register }) {
               id="inlineRadio2"
               value="option2"
             />
-            <label className="form-check-label" for="inlineRadio2">
+            <label className="form-check-label" htmlFor="inlineRadio2">
               Few times a year
             </label>
           </div>
@@ -274,7 +274,7 @@ export default function GuestInput({ register }) {
               id="inlineRadio1"
               value="option1"
             />
-            <label className="form-check-label" for="inlineRadio1">
+            <label className="form-check-label" htmlFor="inlineRadio1">
               Never
             </label>
           </div>
