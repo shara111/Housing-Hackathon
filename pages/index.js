@@ -6,7 +6,7 @@ export default function Home() {
     <div className="container text-center my-5">
       {/* <h1 className="mb-4" style={{ fontSize: '3rem', fontWeight: 'bold' }}>HOMEPAGE</h1> <br /><br /> */}
       <p className="mb-4" style={{ fontSize: '4rem', fontWeight: 'bold' }}>
-        Link with current homeowners to <br />secure a place to stay
+        Link with current students to <br />secure a place to stay
       </p>
       <br /><br /><br /><br /><br /><br />
 
