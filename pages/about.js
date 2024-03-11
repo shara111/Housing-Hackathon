@@ -7,7 +7,7 @@ export default function About() {
         About Us
       </h1>
       <div className="card mb-5">
-        <div className="card-body">
+        <div className="card-body mx-2">
           <p style={{ fontSize: "26px", lineHeight: "1.5" }}>
             Welcome to BotsDiff, where innovation meets necessity in the realm of student housing. Born out of a shared
             vision at Hackathon 2024, our team is on a mission to revolutionize how students find their next home away
@@ -19,7 +19,7 @@ export default function About() {
       </div>
 
       <div className="card mb-5">
-        <div className="card-body">
+        <div className="card-body mx-2">
           <h2 className="card-title" style={{ lineHeight: 2, color: "#5F8575" }}>
             Our Journey
           </h2>
@@ -34,7 +34,7 @@ export default function About() {
       </div>
 
       <div className="card mb-5">
-        <div className="card-body">
+        <div className="card-body mx-2">
           <h2 className="card-title" style={{ lineHeight: 2, color: "#5F8575" }}>
             Our Solution
           </h2>
@@ -49,7 +49,7 @@ export default function About() {
       </div>
 
       <div className="card mb-5">
-        <div className="card-body">
+        <div className="card-body mx-2">
           <h2 className="card-title" style={{ lineHeight: 2, color: "#5F8575" }}>
             Our Vision
           </h2>
@@ -64,7 +64,7 @@ export default function About() {
       </div>
 
       <div className="card mb-5">
-        <div className="card-body">
+        <div className="card-body mx-2">
           <h2 className="card-title" style={{ lineHeight: 2, color: "#5F8575" }}>
             Join Us
           </h2>
