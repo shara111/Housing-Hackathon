@@ -88,7 +88,7 @@ export default function GuestInput({ register }) {
               value="option1"
               {...register("dayTimeGuestsFreq")}
             />
-            <label class="form-check-label" for="inlineRadio1">
+            <label className="form-check-label" for="inlineRadio1">
               Daily/No Preference
             </label>
           </div>
@@ -101,7 +101,7 @@ export default function GuestInput({ register }) {
               value="option2"
               {...register("dayTimeGuestsFreq")}
             />
-            <label class="form-check-label" for="inlineRadio2">
+            <label className="form-check-label" for="inlineRadio2">
               Few times a week
             </label>
           </div>
@@ -115,7 +115,7 @@ export default function GuestInput({ register }) {
               {...register("dayTimeGuestsFreq")}
             />
 
-            <label class="form-check-label" for="inlineRadio1">
+            <label className="form-check-label" for="inlineRadio1">
               Few times a month
             </label>
           </div>
@@ -128,7 +128,7 @@ export default function GuestInput({ register }) {
               value="option2"
               {...register("dayTimeGuestsFreq")}
             />
-            <label class="form-check-label" for="inlineRadio2">
+            <label className="form-check-label" for="inlineRadio2">
               Few times a year
             </label>
           </div>
@@ -141,7 +141,7 @@ export default function GuestInput({ register }) {
               value="option1"
               {...register("dayTimeGuestsFreq")}
             />
-            <label class="form-check-label" for="inlineRadio1">
+            <label className="form-check-label" for="inlineRadio1">
               Never
             </label>
           </div>
@@ -161,31 +161,55 @@ export default function GuestInput({ register }) {
               value="option1"
               {...register("nightTimeGuests")}
             />
-            <label class="form-check-label" for="inlineRadio1">
+            <label className="form-check-label" for="inlineRadio1">
               Daily
             </label>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
-            <label class="form-check-label" for="inlineRadio2">
+          <div className="form-check form-check-inline">
+            <input
+              className="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio2"
+              value="option2"
+            />
+            <label className="form-check-label" for="inlineRadio2">
               Few times a week
             </label>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
-            <label class="form-check-label" for="inlineRadio1">
+          <div className="form-check form-check-inline">
+            <input
+              className="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio1"
+              value="option1"
+            />
+            <label className="form-check-label" for="inlineRadio1">
               Few times a month
             </label>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
-            <label class="form-check-label" for="inlineRadio2">
+          <div className="form-check form-check-inline">
+            <input
+              className="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio2"
+              value="option2"
+            />
+            <label className="form-check-label" for="inlineRadio2">
               Few times a year
             </label>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
-            <label class="form-check-label" for="inlineRadio1">
+          <div className="form-check form-check-inline">
+            <input
+              className="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio1"
+              value="option1"
+            />
+            <label className="form-check-label" for="inlineRadio1">
               Never
             </label>
           </div>
@@ -202,31 +226,55 @@ export default function GuestInput({ register }) {
               value="option1"
               {...register("nightTimeGuestsFreq")}
             />
-            <label class="form-check-label" for="inlineRadio1">
+            <label className="form-check-label" for="inlineRadio1">
               Daily/No Preference
             </label>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
-            <label class="form-check-label" for="inlineRadio2">
+          <div className="form-check form-check-inline">
+            <input
+              className="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio2"
+              value="option2"
+            />
+            <label className="form-check-label" for="inlineRadio2">
               Few times a week
             </label>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
-            <label class="form-check-label" for="inlineRadio1">
+          <div className="form-check form-check-inline">
+            <input
+              className="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio1"
+              value="option1"
+            />
+            <label className="form-check-label" for="inlineRadio1">
               Few times a month
             </label>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
-            <label class="form-check-label" for="inlineRadio2">
+          <div className="form-check form-check-inline">
+            <input
+              className="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio2"
+              value="option2"
+            />
+            <label className="form-check-label" for="inlineRadio2">
               Few times a year
             </label>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
-            <label class="form-check-label" for="inlineRadio1">
+          <div className="form-check form-check-inline">
+            <input
+              className="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio1"
+              value="option1"
+            />
+            <label className="form-check-label" for="inlineRadio1">
               Never
             </label>
           </div>

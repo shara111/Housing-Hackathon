@@ -1,23 +1,14 @@
 import { Button, Container, Form, Nav, Navbar } from "react-bootstrap";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { useState } from "react";
 
 export default function MainNavbar() {
-  const [searchField, setSearchField] = useState();
-  const router = useRouter();
-
-  const handleSearchSubmit = (e) => {
-    e.preventDefault();
-    console.log(searchField);
-    router.push(`/artwork?title=true&q=${searchField}`);
-  };
-
   return (
     <>
       <Navbar expand="lg" style={{ backgroundColor: "#183D3D", padding: "10px" }}>
         <Container fluid className="container">
-          <Navbar.Brand href="#">Sharespace Scout</Navbar.Brand>
+          <Navbar.Brand href="#" eventKey="disabled" disabled>
+            Sharespace Scout
+          </Navbar.Brand>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="bsasic-navbar-nav">
@@ -30,8 +21,8 @@ export default function MainNavbar() {
                 <Nav.Link>About Us</Nav.Link>
               </Link>
               &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-              <Link href="/support" passHref legacyBehavior>
-                <Nav.Link>Support Us</Nav.Link>
+              <Link href="/history" passHref legacyBehavior>
+                <Nav.Link>Search History</Nav.Link>
               </Link>
             </Nav>
             <Button href="/profile" variant="outline-success">
@@ -39,7 +30,7 @@ export default function MainNavbar() {
             </Button>
             &nbsp; &nbsp;
             <Button href="/preferences" variant="outline-success">
-              Edit Habits
+              Edit Preferences
             </Button>
           </Navbar.Collapse>
         </Container>

@@ -1,12 +1,10 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 export default function Footer() {
   return (
     <>
-      <footer className="text-center text-lg-start bg-body-tertiary text-muted">
-        <section className="d-flex justify-content-center justify-content-lg-between pt-4 pb-3 border-bottom container">
+      <footer className="text-center text-lg-start bg-body-tertiary text-muted" style={{ marginTop: "50vh" }}>
+        <section className="d-flex justify-content-center justify-content-lg-between pt-5 pb-4 border-bottom container">
           <div className="me-5 d-none d-lg-block">
-            <p>&copy; 2024 Copyright StudentCritic | All Rights Reserved</p>
+            <p>&copy; 2024 Copyright Sharespace Scout | All Rights Reserved</p>
           </div>
           <div>
             <a href="" className="me-4 text-reset"></a>
